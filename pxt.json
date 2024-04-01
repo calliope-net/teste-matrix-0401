@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "matrix": "github:calliope-net/matrix#v0.0.13"
+        "matrix": "github:calliope-net/matrix#master",
+        "rtc-uhr": "github:calliope-net/rtc-uhr#v2.1.1"
     },
     "files": [
         "main.blocks",
@@ -20,16 +21,16 @@
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "blocksprj",
     "yotta": {
         "config": {
             "microbit-dal": {
                 "bluetooth": {
+                    "device_info_service": 1,
                     "pairing_mode": 1,
                     "partial_flashing": 1,
                     "dfu_service": 1,
-                    "event_service": 1,
-                    "device_info_service": 1
+                    "event_service": 1
                 },
                 "stack_size": 2048,
                 "gatt_table_size": "0x800",
