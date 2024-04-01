@@ -14,6 +14,6 @@ loops.everyInterval(1000, function () {
         matrix.writeClock_radius24(30, 23, rtcpcf85063tp.getByte(rtcpcf85063tp.rtcpcf85063tp_eRegister(rtcpcf85063tp.eRegister.Stunde), rtcpcf85063tp.eFormat.DEC), rtcpcf85063tp.getByte(rtcpcf85063tp.rtcpcf85063tp_eRegister(rtcpcf85063tp.eRegister.Minute), rtcpcf85063tp.eFormat.DEC))
         matrix.writeDisplay(0, 5, matrix.eI2C.I2C_x3C)
     }
-    matrix.writeDigitImageArray(rtcpcf85063tp.getTime(rtcpcf85063tp.ePart.mit), 1, 49, 11, 0, matrix.eTransparent.u, matrix.oled_eFaktor(matrix.eFaktor.f2))
+    matrix.writeDigitImageArray(rtcpcf85063tp.getTime(rtcpcf85063tp.ePart.mit), 1, 49, 6, 0, matrix.eTransparent.u, matrix.oled_eFaktor(matrix.eFaktor.f2))
     matrix.writeDisplay(6, 7, matrix.eI2C.I2C_x3C)
 })
