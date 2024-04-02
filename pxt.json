@@ -4,7 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "matrix": "github:calliope-net/matrix#v0.0.15",
+        "matrix": "github:calliope-net/matrix#v0.0.17",
         "rtc-uhr": "github:calliope-net/rtc-uhr#v2.1.1"
     },
     "files": [
@@ -27,11 +27,7 @@
         "config": {
             "microbit-dal": {
                 "bluetooth": {
-                    "device_info_service": 1,
-                    "pairing_mode": 1,
-                    "partial_flashing": 1,
-                    "dfu_service": 1,
-                    "event_service": 1
+                    "device_info_service": 0
                 },
                 "stack_size": 2048,
                 "gatt_table_size": "0x800",
